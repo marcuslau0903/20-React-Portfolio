@@ -8,10 +8,10 @@ const ProjectCard = (props) => {
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.description}</Card.Text>
-        <Button variant="link" href={props.repoURL}>
+        <Button variant="light" href={props.repoURL} className="m-1">
           GitHub Repo
         </Button>
-        <Button variant="link" href={props.deployedURL}>
+        <Button variant="light" href={props.deployedURL}>
           Deployed App
         </Button>
       </Card.Body>

@@ -1,5 +1,14 @@
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <Navbar bg="dark" variant="dark">
+      <Container className="p-3 justify-content-center">
+        <Navbar.Brand href="/">Thans For Visiting!!</Navbar.Brand>
+      </Container>
+    </Navbar>
+  );
 };
 
 export default Footer;

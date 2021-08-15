@@ -3,19 +3,19 @@ import Button from "react-bootstrap/Button";
 const contactLinks = [
   {
     text: "GitHub",
-    href: "",
+    href: "https://github.com/marcuslau0903",
   },
   {
     text: "LinkedIn",
-    href: "",
+    href: "https://www.linkedin.com/in/marcus-lau-099368a6/",
   },
   {
     text: "Email",
-    href: "",
+    href: "when i press this i forwards to email",
   },
   {
     text: "CV",
-    href: "",
+    href: "when i press this its going to download PDf version",
   },
 ];
 
@@ -25,7 +25,7 @@ const ContactLinks = () => {
       {contactLinks.map((contactLink) => {
         return (
           <div className="m-2">
-            <Button variant="link" href={contactLink.href}>
+            <Button variant="light" href={contactLink.href}>
               {contactLink.text}
             </Button>
           </div>
