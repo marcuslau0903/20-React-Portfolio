@@ -11,11 +11,11 @@ const contactLinks = [
   },
   {
     text: "Email",
-    href: "when i press this i forwards to email",
+    href: "mailto:marcuslau0903@gmail.com",
   },
   {
     text: "CV",
-    href: "when i press this its going to download PDf version",
+    href: "../CV Marcus Lau.pdf",
   },
 ];
 
@@ -25,7 +25,7 @@ const ContactLinks = () => {
       {contactLinks.map((contactLink) => {
         return (
           <div className="m-2">
-            <Button variant="light" href={contactLink.href}>
+            <Button as="a" download variant="light" href={contactLink.href}>
               {contactLink.text}
             </Button>
           </div>

@@ -8,7 +8,6 @@ const App = () => {
     <Router basename="/">
       <NavigationBar />
       <Routes />
-      <Footer />
     </Router>
   );
 };
