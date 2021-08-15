@@ -1,6 +1,7 @@
 import Card from "react-bootstrap/Card";
 import Img from "./profile-image.PNG";
 import Image from "react-bootstrap/Image";
+import ContactLinks from "../ContactLinks";
 
 const AboutMe = ({ title, description }) => {
   return (
@@ -12,6 +13,7 @@ const AboutMe = ({ title, description }) => {
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>{description}</Card.Text>
+          <ContactLinks />
         </Card.Body>
       </Card>
     </div>
